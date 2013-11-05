@@ -53,15 +53,7 @@ speech.onwebkitspeechchange = function(e) {
 <br><br><br><br>
 
 <h1>Option 3</h1>
-<script type="text/javascript">
-   var recognition = new SpeechRecognition();
-   recognition.onresult = function(event) {
-     if (event.results.length > 0) {
-       q.value = event.results[0][0].transcript;
-       q.form.submit();
-     }
-   }
- </script>
+
 
  <form action="http://www.example.com/search">
    <input type="search" id="q" name="q" size=60>
